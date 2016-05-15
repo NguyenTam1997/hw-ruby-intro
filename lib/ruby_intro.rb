@@ -3,7 +3,9 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  return arr[0] if arr.length == 1
+  arr.inject(:+)
 end
 
 def max_2_sum arr
