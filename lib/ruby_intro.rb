@@ -9,11 +9,12 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum arr.sort.pop(2)
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  arr.combination(2).each {|c| return true if (c[0] + c[1] == n)}
+  false
 end
 
 # Part 2
